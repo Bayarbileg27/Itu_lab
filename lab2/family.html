@@ -6,28 +6,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="me.html">Me</a>
-    <a href="family.html">Family</a>
-    <a href="friends.html">Friends</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <h1>My Family</h1>
-  <div class="card-container">
-    <div class="card">
-      <h3>Mom</h3>
-      <p>She’s a teacher.</p>
-    </div>
-    <div class="card">
-      <h3>Dad</h3>
-      <p>He’s an engineer.</p>
-    </div>
-    <div class="card">
-      <h3>Brother</h3>
-      <p>He’s a lawyer.</p>
-    </div>
-  </div>
+  <table class="layout">
+    <tr>
+      <td colspan="2" class="header">My Family</td>
+    </tr>
+    <tr>
+      <td class="nav">
+        <a href="index.html">Home</a>
+        <a href="me.html">Me</a>
+        <a href="family.html">Family</a>
+        <a href="friends.html">Friends</a>
+        <a href="contact.html">Contact</a>
+      </td>
+      <td class="content">
+        <h1>Гэр бүлийн гишүүд</h1>
+        <table border="1" cellpadding="10" cellspacing="1">
+          <tr>
+            <th>Хэн</th>
+            <th>Нэр</th>
+            <th>Нас</th>
+            <th>Ажил</th>
+          </tr>
+          <tr>
+            <td>Аав</td>
+            <td>Санжжав</td>
+            <td>52</td>
+            <th>Инженер</th>
+          </tr>
+          <tr>
+            <td>Ээж</td>
+            <td>Аюуш</td>
+            <td>51</td>
+            <th>Багш</th>
+          </tr>
+          <tr>
+            <td>Аа</td>
+            <td>Билгүүн</td>
+            <td>26</td>
+            <th>Хуульч</th>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>

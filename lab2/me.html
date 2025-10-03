@@ -6,24 +6,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="me.html">Me</a>
-    <a href="family.html">Family</a>
-    <a href="friends.html">Friends</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <h1>About Me</h1>
-  <div class="profile">
-    <img src="https://via.placeholder.com/120" alt="Profile">
-    <div class="profile-info">
-      <p><strong>Name:</strong> Your Name</p>
-      <p><strong>Age:</strong> 19</p>
-      <p><strong>Sex:</strong> Male</p>
-      <p><strong>School:</strong> National University</p>
-      <p><strong>Hobby:</strong> Coding, Gaming</p>
-    </div>
-  </div>
+  <table class="layout">
+    <tr>
+      <td colspan="2" class="header">About Me</td>
+    </tr>
+    <tr>
+      <td class="nav">
+        <a href="index.html">Home</a>
+        <a href="me.html">Me</a>
+        <a href="family.html">Family</a>
+        <a href="friends.html">Friends</a>
+        <a href="contact.html">Contact</a>
+      </td>
+      <td class="content">
+        <h1>Me</h1>
+        <table border="0" cellpadding="10">
+          <tr>
+            <td><img src="Me.jpeg" alt="Profile"></td>
+            <td>
+              <p><b>Нэр:</b> Баярбилэг </p>
+              <p><b>Нас:</b> 19</p>
+              <p><b>Хүйс:</b> Эр</p>
+              <p><b>Сургууль :</b> МУИС </p>
+              <p><b>Хобби:</b> Coding, Manga</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>

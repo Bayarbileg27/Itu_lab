@@ -6,28 +6,36 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="me.html">Me</a>
-    <a href="family.html">Family</a>
-    <a href="friends.html">Friends</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <h1>Contact Me</h1>
-  <div class="card-container">
-    <div class="card">
-      <h3>Email</h3>
-      <p>bayrbileg27@gmail.com</p>
-    </div>
-    <div class="card">
-      <h3>Phone</h3>
-      <p>+123 456 7890</p>
-    </div>
-    <div class="card">
-      <h3>Location</h3>
-      <p>Ulaanbaatar, Mongolia</p>
-    </div>
-  </div>
+  <table class="layout">
+    <tr>
+      <td colspan="2" class="header">Contact Me</td>
+    </tr>
+    <tr>
+      <td class="nav">
+        <a href="index.html">Home</a>
+        <a href="me.html">Me</a>
+        <a href="family.html">Family</a>
+        <a href="friends.html">Friends</a>
+        <a href="contact.html">Contact</a>
+      </td>
+      <td class="content">
+        <h1>Contact Info</h1>
+        <table border="1" cellpadding="10" cellspacing="0">
+          <tr>
+            <td><img src=email.jpeg width="50px" Length="50px"></td>
+            <td>bayrbileg27@gmail.com</td>
+          </tr>
+          <tr>
+            <td><img src=phone.jpg width="100%" height="40px"></td>
+            <td>89408809</td>
+          </tr>
+          <tr>
+            <td><img src=home.png width="50px" Length="50px"></td>
+            <td>Улаанбаатар, СБД, 3-р хороо</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
