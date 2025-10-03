@@ -68,3 +68,9 @@ h1 {
   text-align: center;
   transition: 0.3s;
 }
+
+figure {
+      display: inline-block;   /* хажуугаар зэрэгцүүлнэ */
+      margin: 15px;
+      text-align: center;
+    }
