@@ -1,0 +1,122 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background: #4CAF50;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Page Header */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #4CAF50;
+}
+
+/* Home Page Layout */
+.home-container {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.circle {
+  border: 3px solid #4CAF50;
+  border-radius: 50%;
+  padding: 40px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.circle:hover {
+  background: #e8f5e9;
+  transform: scale(1.05);
+}
+
+.circle h2 {
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+/* Profile Page */
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 600px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 30px;
+  border: 3px solid #4CAF50;
+}
+
+.profile-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Cards Layout (Family, Friends, Contact) */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #4CAF50;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #e8f5e9;
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
