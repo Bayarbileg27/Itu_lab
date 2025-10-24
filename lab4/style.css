@@ -115,12 +115,6 @@ div
   font-size: 30px;
 }
 
-.img2{
-  position: absolute;
-  right: 1230px;
-  bottom: 920px;
-}
-
 .b2 img{
   position: absolute;
   right: 1230px;
@@ -152,15 +146,42 @@ div
   height: 250px;  
 }
 
+.img1{
+  position: absolute;
+  right: 0px;
+  bottom: 150px; 
+  z-index: 2;
+  height: 150px; 
+}
+
+.img2{
+  position: absolute;
+  right: 0px;
+  top: 300px;
+  z-index: 2; 
+  height: 400px;
+}
+
+.img3{
+  position: absolute;
+  right: 100px;
+  top: 300px;
+  z-index: 2; 
+  height: 500px;
+}
+
+.txt1{
+  position: absolute;
+  right: 150px;
+  top: 400px;
+  z-index: 2; 
+  font-size: 100px; 
+}
+
 .b1 img{
   position: absolute;
   right: 900px;
   bottom: 645px;
   z-index: 2;
   height: 250px;  
-}
-
-img {
-  height: 50px;
-
 }
