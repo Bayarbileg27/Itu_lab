@@ -62,6 +62,10 @@ footer {
   margin-top: 40px;
 }
 
+.fe{
+    font: 100;
+}
+
 /* 🔹 Responsive video */
 iframe {
   width: 100%;
