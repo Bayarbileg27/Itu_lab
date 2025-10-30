@@ -1,0 +1,80 @@
+/* 🌈 Custom Color Palette */
+:root {
+  --dark-navy: #13124F;
+  --indigo: #1B1B6C;
+  --violet: #352BA5;
+  --pink: #F61067;
+  --green: #2AD392;
+  --gray: #9090A5;
+}
+
+/* 🧠 Base */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🔹 Navbar */
+.navbar {
+  background-color: var(--dark-navy);
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+
+/* 🔹 Hero Section */
+.jumbotron {
+  background-color: var(--violet);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.btn-pink {
+  background-color: var(--pink);
+  color: white;
+  border: none;
+}
+
+.btn-pink:hover {
+  background-color: #d90c5b;
+}
+
+/* 🔹 Sidebar */
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* 🔹 Footer */
+footer {
+  background-color: var(--dark-navy);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+.fe{
+    font: 100;
+}
+
+/* 🔹 Responsive video */
+iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  iframe {
+    height: 400px;
+  }
+}
