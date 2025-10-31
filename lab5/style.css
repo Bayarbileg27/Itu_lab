@@ -1,4 +1,3 @@
-/* 🌈 Custom Color Palette */
 :root {
   --dark-navy: #13124F;
   --indigo: #1B1B6C;
@@ -8,73 +7,227 @@
   --gray: #9090A5;
 }
 
-/* 🧠 Base */
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: rgb(29, 28, 28);
   margin: 0;
-  padding: 0;
 }
 
-/* 🔹 Navbar */
-.navbar {
-  background-color: var(--dark-navy);
-}
-
-.navbar-brand {
-  color: white !important;
-  font-weight: bold;
-}
-
-/* 🔹 Hero Section */
-.jumbotron {
-  background-color: var(--violet);
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.btn-pink {
-  background-color: var(--pink);
-  color: white;
-  border: none;
-}
-
-.btn-pink:hover {
-  background-color: #d90c5b;
-}
-
-/* 🔹 Sidebar */
-.sidebar {
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-/* 🔹 Footer */
-footer {
-  background-color: var(--dark-navy);
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
-}
-
-.fe{
-    font: 100;
-}
-
-/* 🔹 Responsive video */
 iframe {
   width: 100%;
-  height: 300px;
   border-radius: 10px;
 }
 
-@media (min-width: 992px) {
+/* -------- HEADER -------- */
+.div1 {
+  background-color: var(--indigo);
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.div1 img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* -------- HERO SECTION -------- */
+.div2 {
+  background-color: var(--dark-navy);
+  color: white;
+  padding: 60px 30px;
+  text-align: center;
+}
+.div2 h1 {
+  font-size: 5cap;
+}
+.div2 button {
+  background-color: var(--pink);
+  color: white;
+  padding: 10px 20px;
+  border: 0;
+  font-size: 14px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+/* -------- MAIN CONTENT -------- */
+.div3 {
+  background-color: white;
+  padding: 40px 20px;
+}
+
+.div3 h {
+  font-size: 28px;
+}
+
+.div3_a {
+  background-color: var(--gray);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  color: white;
+  padding: 10px;
+}
+
+/* -------- RIGHT SIDE -------- */
+.div3_r1 {
+  background-color: var(--pink);
+  margin-top: 20px;
+  align-items: center;
+  height: 30px;
+  color: white;
+  padding: 5px 10px;
+}
+.badge {
+  background-color: #352BA5;
+  border-radius: 50%;
+  padding: 4px 10px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.div3_r2 {
+  background-color: var(--gray);
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+}
+.div3_r3 {
+  background-color: var(--dark-navy);
+  padding: 15px;
+  color: white;
+}
+.div3_r3 input {
+  width: 100%;
+  background-color: var(--indigo);
+  border-top: 2px solid var(--gray);
+  border-bottom: 4px solid var(--gray);
+  border-left: 0px;
+  border-right: 0px;
+  margin-bottom: 20px;
+  color: white;
+  padding: 8px;
+}
+.div3_r3 button {
+  width: 100%;
+  background-color: var(--pink);
+  height: 35px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+.div3_r4 {
+  background-color: var(--indigo);
+  text-align: center;
+  height: 40px;
+  padding-top: 10px;
+}
+
+.div3_r5 {
+  border: 1px solid var(--gray);
+  padding: 15px;
+  margin-top: 20px;
+  color: black;
+}
+
+.meter1 {
+  float: left;
+  background-color: var(--pink);
+  width: 70%;
+  height: 7px;
+}
+.meter2 {
+  float: left;
+  background-color: var(--green);
+  width: 30%;
+  height: 7px;
+}
+.cool{
+     display:inline-block;
+    background-color: var(--pink);
+    color: white;
+    width: 47%;
+    margin-top: 10%;
+    border: 2px solid #F61067;
+    text-align: center;
+}
+
+.lame{
+    display:inline-block;
+    border: 2px solid #2AD392;
+    color: var(--green);
+    width: 47%;
+    margin-left: 3%;
+    text-align: center;  
+}
+
+/* -------- FOOTER -------- */
+.div4 {
+  background-color: var(--dark-navy);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ==================================================
+   📱 MEDIA QUERIES
+================================================== */
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .div2 h1 {
+    font-size: 4cap;
+  }
+  .div2 {
+    padding: 40px 20px;
+  }
+  .div3 {
+    padding: 30px 15px;
+  }
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
+  .div1 {
+    font-size: 18px;
+    justify-content: center;
+  }
+  .div2 {
+    padding: 30px 15px;
+  }
+  .div2 h1 {
+    font-size: 3cap;
+  }
+  .div2 p {
+    font-size: 14px;
+  }
+  .div2 button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  .div3 {
+    padding: 20px 10px;
+  }
+  .div3_r {
+    margin-top: 20px;
+  }
+  .div3_r2, .div3_r3, .div3_r4, .div3_r5 {
+    width: 100%;
+  }
+  .div3_r1{
+    width: 100%;
+    height: 30px;
+  }
+
+  .cool, .lame {
+    float: none;
+    width: 100%;
+    margin: 10px auto;
+  }
   iframe {
-    height: 400px;
+    height: 220px;
   }
 }

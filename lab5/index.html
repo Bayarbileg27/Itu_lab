@@ -3,81 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello, world!</title>
-
-  <!-- ✅ Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- ✅ Google Font: Lato -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- ✅ Custom CSS -->
   <link rel="stylesheet" href="style.css">
+  <title>Bayrbileg Lab5_1</title>
 </head>
-
 <body>
-  <!-- 🔹 Navbar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">Webjunto</a>
+
+<div class="container-xxl">
+
+  <!-- Header -->
+  <div class="row">
+    <div class="div1 col-12">
+      <img src="logo.png" alt="logo">
+      Web<b>junto'</b>
     </div>
-  </nav>
+  </div>
 
-  <!-- 🔹 Hero Section -->
-  <section class="jumbotron">
-    <div class="container">
-      <h1 class="display-4 fw-bold"> Sain uu!</h1>
-      <p class="lead">Welcome to Bootstrap v3.3.7. Check out this awesome jumbotron!</p>
-      <a href="#" class="btn btn-pink btn-lg mt-3">Learn More</a>
+  <!-- Hero Section -->
+  <div class="row">
+    <div class="div2 col-12">
+      <h1>Hello, world!</h1>
+      <p>Welcome to Bootstrap v3.3.7. Check out this awesome jumbotron!</p>
+      <button><b>LEARN MORE</b></button>
     </div>
-  </section>
+  </div>
 
-  <!-- 🔹 Main Content -->
-  <div class="container my-5">
-    <div class="row g-4">
-      <!-- Left side content -->
-      <div class="col-12 col-lg-8">
-        <h2>Heading goes here</h2>
-        <p>
-          Cupcake ipsum dolor sit amet caramels halvah soufflé sugar plum. 
-          Fruitcake lollipop tiramisu pastry halvah sesame snaps. 
-          Muffin danish liquorice. Cotton candy sweet roll marzipan ice cream powder bonbon lollipop chocolate bar chupa chups.
-        </p>
-
-        <!-- YouTube video -->
-        <div class="ratio ratio-16x9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/J---aiyznGQ?si=5AXX1nvS-cNkQN-7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-
-        <div class="alert alert-secondary mt-3">
-        <strong>Whoa!</strong> This is a super important alert!
-        </div>
+  <!-- Main Section -->
+  <div class="row div3 justify-content-center">
+    <!-- Left Side -->
+    <div class="col-12 col-md-8">
+      <h>Heading goes here</h><hr>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore..."</p>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/J---aiyznGQ" allowfullscreen></iframe>
       </div>
+      <div class="div3_a"><p>Whoa! This is a super important alert!</p></div>
+    </div>
 
-      <!-- Right side sidebar -->
-      <div class="col-12 col-lg-4">
-        <div class="sidebar">
-          <h5 class="mb-3">Welcome Candidate!</h5>
-          <p>You are a Starfleet Academy candidate. Greet the Captain in a <em>respectful</em> fashion.</p>
-          <input type="text" class="form-control mb-2" placeholder="Input your greeting.">
-          <button class="btn ongo4">Send</button>
-
-          <hr>
-          <p>Cast your vote! What do you think about space? See vote progress bar below!</p>
-          <div class="progress mb-2">
-            <div class="progress-bar" style="width: 70%; background-color: var(--green);">Cool</div>
-          </div>
-          <div class="progress">
-            <div class="progress-bar" style="width: 30%; background-color: var(--pink);">Lame</div>
-          </div>s
-        </div>
+    <!-- Right Side -->
+    <div class="div3_r col-12 col-md-4">
+      <div class="div3_r1"><i class="fa-solid fa-envelope"></i> Message <span class="badge">3</span></div>
+      <div class="div3_r2">Welcome Candidate!</div>
+      <div class="div3_r3">
+        <p>You are a Starfleet Academy candidate. Greet the Captain respectfully.</p>
+        <input type="text" placeholder="Input your greeting..">
+        <button>Send</button>
+      </div>
+      <div class="div3_r4"><u>I don't watch Star Trek and don't get this reference</u></div>
+      <div class="div3_r5">
+        <p>Cast your vote! What do you think about space?</p>
+        <div class="meter1"></div>
+        <div class="meter2"></div>
+        <div class="cool">COOL</div>
+        <div class="lame">LAME</div>
       </div>
     </div>
   </div>
 
-  <!-- 🔹 Footer -->
-  <footer>
-    <p>© 2017 All Rights Reserved, SomeCompany.</p>
-  </footer>
+  <!-- Footer -->
+  <div class="row">
+    <div class="div4 col-12">
+      <p>© 2017 All Rights Reserved, SomeCompany.</p>
+    </div>
+  </div>
+
+</div>
+
 </body>
 </html>

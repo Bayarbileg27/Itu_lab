@@ -143,7 +143,7 @@ u{
      display:inline-block;
     background-color: var(--pink);
     color: white;
-    width: 48%;
+    width: 47%;
     margin-top: 10%;
     border: 2px solid #F61067;
     text-align: center;
@@ -153,8 +153,8 @@ u{
     display:inline-block;
     border: 2px solid #2AD392;
     color: var(--green);
-    width: 48%;
-    margin-left: 2%;
+    width: 47%;
+    margin-left: 3%;
     text-align: center;
     
 }
