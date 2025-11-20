@@ -81,6 +81,20 @@ b{
     font-size: 30px;
 }
 
+.div4{
+    display: flex;
+    justify-content: space-between;
+    min-height: 700px ;
+    font-size: 15px;
+    color:gray;
+    flex-direction: row;
+}
+
+.div4 p{
+    font-size: 15px;
+}
+
+
 .img1{
     height: 70%;
 }
@@ -100,6 +114,9 @@ button{
     padding: 10px;
     min-width: 120px;   
     font-size: 20px;  
+}
+button a{
+    color: white;   
 }
 
 .button1{
