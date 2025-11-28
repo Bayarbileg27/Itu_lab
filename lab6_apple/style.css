@@ -129,3 +129,17 @@ a{
     text-decoration: none;
     color: black;
 }
+
+.col19{
+    width: 19%;
+    height: 250px;
+    background-color: bisque;
+}
+
+.rowbelow{
+    justify-content: space-around;
+}
+
+footer a{
+  color: grey;
+}
