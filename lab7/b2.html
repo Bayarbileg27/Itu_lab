@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html"><button>Бүх бодлого</button></a>
+    <h1>2. Чоно 25 км/ц хурдтай, туулай 18 км/ц хурдтай. Гараас өгсөн зайтай байхад хэдэн минут хэдэн секундын дараа гэхэд гүйцэх вэ?</h1>
+<script type="text/javascript">
+    var x=25,y=18,l,t;
+
+       x=x*1000/3600;
+       y=y*1000/3600;
+       l=window.prompt("Хоорондох зай хэдэн метр вэ?")
+       t=l/(x-y);
+
+       document.writeln("<p>"+
+           "Хоорондох зай: " + l + " метр <br>" +
+           (Math.floor(t/60)) +" минут "+
+           (Math.floor(t%60)) + " секундын дараа туулайг гүйцнэ.</p>");
+</script>
+</body>
+</html>

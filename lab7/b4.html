@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html"><button>Бүх бодлого</button></a>
+    <h1>4. Array-д өгөгдсөн 5 тооны хамгийн бага ерөнхий хуваагдагчийг ол?</h1>
+    <script type="text/javascript">
+        var a=[];
+        var m;
+        var hieh, hbeh;
+        var i=1, j;
+        
+        while(i<=5){
+            a[i]=Number(window.prompt("Toogoo oruulna uu"));
+            i=i+1;
+        }
+
+        i=2;
+        hbeh=a[1];
+        while(i<=5){
+            j=1;
+            m=Math.max(hbeh,a[i]);
+            while(j<=m){
+                if(hbeh%j==0 && a[i]%j==0){
+                    hieh=j;
+                }
+                j=j+1;
+            }
+            hbeh=hbeh*a[i]/hieh;
+            i=i+1;
+        }
+        document.writeln("<p> Hamgiin bag eronhii huvaagch: "+hbeh+"</p>");   
+    </script>
+</body>
+</html>

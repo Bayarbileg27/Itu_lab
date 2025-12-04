@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html"><button>Бүх бодлого</button></a>
+    <h1>3. Байшин 9 давхар, 3 орцтой, давхартаа 4 айлтай бол гараас өгсөн тоот нь хэддүгээр орцны хэддүгээр давхарын хэд дэх хаалга вэ?</h1>
+<script type="text/javascript">
+    var a,x,y,z;
+    a=window.prompt("Хаалганы тоотыг оруулна уу?");
+    if(a>108) {
+        document.writeln("<h> Таны оруулсан тоот хэт их байна." + "<br>" + " / 109-ээс бага тоот оруулна уу! / </h>")
+    }
+    else{
+        x= Math.floor((a-1)/36+1);
+        y= Math.floor(((a-36*(x-1))-1)/4+1);
+        z= Math.floor((a-1)%4+1);
+        document.writeln("<p>"+
+            "Орцны дугаар: " + x + "<br>"+
+            "Давхар: " + y + "<br>"+
+            "Хаалганы эрэмбэ: " + z + "</p>")
+    }
+</script>
+</body>
+</html>

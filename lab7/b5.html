@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html"><button>Бүх бодлого</button></a>
+    <h1>5. Вэб сайтруу өглөө ороход гараас өгсөн тооны 2 зэрэгийг, орой ороход гараас өгсөн тооны язгуурыг ол.</h1>
+    <script type="text/javascript">
+        var a;
+        var now=new Date();
+        var time=now.getHours();
+
+        a=Number(window.prompt("toogoo oruulna uu"));
+        if(time<12){
+            a=a*a;
+        }
+        else a=Math.sqrt(a);
+        document.writeln("a = "+a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html"><button>Бүх бодлого</button></a>
+    <h1>1. Гараас өгсөн тооны цифрүүдийн нийлбэр нь палимдром мөн эсэхийг шалга.</h1>
+<script type="text/javascript">
+    var a,b=0,c=0,d;
+
+       a=window.prompt("Toogoo ooruul")
+       document.writeln("<p>Тоо: "+a+"</p>");
+       while(a>0){
+           b=b+a%10;
+           a=(a-a%10)/10;
+       }
+
+       document.writeln("<p>Цифрийн Нийлбэр: "+b+"</p>");
+       d=b;
+       while(b>0){
+           c=c*10+b%10;
+           b=(b-b%10)/10;
+       }
+       if(c==d) document.writeln("<p>Палиндром эсэх: "+"Мөн"+"</p>");
+       else document.writeln("<p>Палиндром эсэх: "+"Биш"+"</p>");  
+</script> 
+</body>
+</html>
