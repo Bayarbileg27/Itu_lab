@@ -32,7 +32,7 @@ const hun = document.getElementById("hun");
 const aldaa = document.getElementById("aldaa");
 const letters = document.querySelectorAll(".letter");
 
-// ---------------- Зураг шинэчлэх ----------------
+
 function updateImage() {
     let img = document.createElement("img");
     img.src = `${miss + 1}.png`;
@@ -50,7 +50,7 @@ function startGame() {
     asuult.textContent = data.question;
     aldaa.textContent = "0";
 
-    // Эхний зураг (1.png)
+    
     updateImage();
 
     ug.innerHTML = "";
@@ -63,7 +63,7 @@ function startGame() {
 
 }
 
-// ---------------- Үсэг дарах ----------------
+
 letters.forEach(btn => {
     btn.addEventListener("click", () => {
         const letter = btn.textContent;

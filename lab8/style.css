@@ -16,14 +16,14 @@ body {
 
 .game-box {
     width: 85%;
-    height: 1000px;
+    height: 800px;
     background: #448169;
     box-shadow: 0 0 20px rgba(0,0,0,0.15);
     border-radius: 20px;
     display: flex;
     padding: 30px;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 .left-side {
@@ -33,7 +33,7 @@ body {
 .right-side {
     width: 30%;
     text-align: center;
-    
+    justify-items: center;
 }
 
 .ug {
@@ -56,8 +56,8 @@ body {
 }
 
 .keyboard .letter {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 9   0px;
     margin: 4px;
     background: #222732;
     color: #448169;
@@ -81,15 +81,28 @@ body {
 .miss {
     margin-top: 20px;
     font-size: 20px;
+    background-color: #25503f;
+    width: 120px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: white;
 }
 
 .garchig{
-    position:absolute;
-    justify-self:center;
-    font-size: 150px;
+    align-self:start;
+    font-size: 120px;
+  
 }
 
 #nextBtn{
     font-size: 40px;
     border-radius: 15px;
+    background-color: #25503f;
+    border: none;
+}
+
+.next{
+    display: flex;
+    align-items: baseline;
 }

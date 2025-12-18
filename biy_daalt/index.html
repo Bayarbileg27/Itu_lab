@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SoraHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="ocean">
+  <!-- Header -->
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+      <a class="brand" href="#top" aria-label="SoraHub home">
+        <div class="logo" aria-hidden="true">S</div>
+        <div class="brand__text">
+          <div class="brand__name">SoraHub</div>
+          <div class="brand__tag">Games • Hub • Fun</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="#best-seller">Best seller</a>
+        <a class="nav__link" href="#games">Games</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="nav__link nav__pill" href="">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Body -->
+  <main id="top" class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__left">
+        <h1>SoraHub — Бүх тоглоомуудыг нэг дороос</h1>                                                         
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#best-seller">Best seller үзэх</a>
+          <a class="btn btn--ghost" href="#games">Бүх тоглоом</a>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="glass-card">
+          <div class="spark"></div>
+          <div class="glass-card__title">Today’s Highlight</div>
+          <div class="glass-card__big">Target Shooter</div>
+          <div class="glass-card__meta">
+            10 оноо • 4 секунд
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Seller -->
+    <section id="best-seller" class="section">
+      <div class="section__head">
+        <h2>Best seller</h2>
+        <p class="muted">Хамгийн эрэлттэй тоглоом</p>
+      </div>
+
+      <a class="best-card" href="game.html">
+        <div class="best-card__media">
+          <img src="img/target-cover.png" alt="Target Shooter cover" onerror="this.style.display='none'; this.parentElement.classList.add('media--fallback');" />
+          <div class="fallback-art" aria-hidden="true">
+          </div>
+        </div>
+
+        <div class="best-card__body">
+          <div class="pill">Best • Shooter</div>
+          <h3>Бай оних тоглоом</h3>
+          <p class="muted">
+            Бай тус бүр 4 секунд болно. 10 оноо хүрвэл ялна. <br>   
+            Restart дараад дахин нэг хусъя.
+          </p>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__k">Mode</div>
+              <div class="stat__v">Arcade</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">Goal</div>
+              <div class="stat__v">10 hits</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">Speed</div>
+              <div class="stat__v">4 sec</div>
+            </div>
+          </div>
+
+          <div class="best-card__cta">
+            <span class="btn btn--primary">Play now</span>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Games -->
+    <section id="games" class="section">
+      <div class="section__head section__head--row">
+        <div>
+          <h2>Games</h2>
+          <p class="muted">6 тоглоом</p>
+        </div>
+
+        <button class="btn btn--ghost btn--sm" id="seeMoreBtn" type="button">
+          See more
+        </button>
+      </div>
+
+      <div class="game-grid" id="gameGrid">
+        <!-- Card 1 -->
+        <a class="game-card" href="game.html">
+          <div class="game-card__top">
+            <div class="chip">Shooter</div>
+          </div>
+          <div class="game-card__img">
+            <img src="img/target-cover.png" alt="Target Shooter" />
+          </div>
+          <div class="game-card__name">Target Shooter</div>
+          <div class="game-card__desc">Бай оних • 10 оноо • 4 секунд</div>
+        </a>
+
+        <!-- Card 2 -->
+        <a class="game-card" href="#">
+          <div class="game-card__top">
+            
+            <div class="chip">Runner</div>
+          </div>
+          <div class="game-card__img">
+            <img src="img/game-runner.png" alt="Endless Runner" onerror="this.style.opacity=.0" />
+          </div>
+          <div class="game-card__name">Endless Runner</div>
+          <div class="game-card__desc">Dino style • High score</div>
+        </a>
+
+        <!-- Card 3 -->
+        <a class="game-card" href="#">
+          <div class="game-card__top">
+            
+            <div class="chip">Puzzle</div>
+          </div>
+          <div class="game-card__img">
+            <img src="img/game-puzzle.png" alt="Puzzle" onerror="this.style.opacity=.0" />
+          </div>
+          <div class="game-card__name">Quick Puzzle</div>
+          <div class="game-card__desc">Match • Brain • Fast</div>
+        </a>
+
+        <!-- Card 4 -->
+        <a class="game-card" href="#">
+          <div class="game-card__top">
+            
+            <div class="chip">Arcade</div>
+          </div>
+          <div class="game-card__img">
+            <img src="img/game-arcade.png" alt="Arcade" onerror="this.style.opacity=.0" />
+          </div>
+          <div class="game-card__name">Coin Dash</div>
+          <div class="game-card__desc">Өнхөр • Зоос ав</div>
+        </a>
+
+        <!-- Card 5 -->
+        <a class="game-card" href="#">
+          <div class="game-card__top">
+            
+            <div class="chip">Word</div>
+          </div>
+          <div class="game-card__img">
+            <img src="img/game-word.png" alt="Word game" onerror="this.style.opacity=.0" />
+          </div>
+          <div class="game-card__name">Hangman MN</div>
+          <div class="game-card__desc">Үг таах</div>
+        </a>
+
+        <!-- Card 6 -->
+        <a class="game-card" href="#">
+          <div class="game-card__top">
+            
+            <div class="chip">Brain</div>
+          </div>
+          <div class="game-card__img">
+            <img src="img/game-aim.png" alt="Aim trainer" onerror="this.style.opacity=.0" />
+          </div>
+          <div class="game-card__name"> Sudoku </div>
+          <div class="game-card__desc">Inteligence • Mind</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section__head">
+        <h2>Contact</h2>
+        <p class="muted">Санал хүсэлт / холбоо барих</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact__card">
+          <h3> Message</h3>
+          <p class="muted">Надтай доорх хаягаар холбогдоорой.</p>
+          <div class="contact__row">
+            <span class="label">Email</span>
+            <span class="value">bayrbileg27@gmail.com</span>
+          </div>
+          <div class="contact__row">
+            <span class="label">Facebook</span>
+            <span class="value">Bayraa bayrbileg<span>
+          </div>
+        </div>
+
+        <div class="contact__card contact__card--accent">
+          <h3> Updates</h3>
+          <p class="muted">Шинэ тоглоом</p>
+          <div class="mini-list">
+            <div class="mini-item">• Target Shooter — v1</div>
+            <div class="mini-item">• Next: Runner</div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> SoraHub</div>
+    </footer>
+  </main>
+
+  <!-- Theme Toggle (bottom-right) -->
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+    🎨
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
